@@ -17,3 +17,5 @@ tema1 -> domain classes, repository hierarchy & implementations using ADO.NET Sy
 tema2 -> service layer done + forms for GUI
 
 tema3 -> refactoring into a client-server app which uses TCP communication, serialized objects protocol and proxy pattern
+
+tema4 -> using .NET Remoting for networking
