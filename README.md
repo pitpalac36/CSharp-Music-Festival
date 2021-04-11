@@ -15,3 +15,5 @@ Features :
 tema1 -> domain classes, repository hierarchy & implementations using ADO.NET System.Data.SQLite provider; logging using log4net
 
 tema2 -> service layer done + forms for GUI
+
+tema3 -> refactoring into a client-server app which uses TCP communication, serialized objects protocol and proxy pattern
