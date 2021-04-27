@@ -1,0 +1,57 @@
+syntax="proto3";
+package proto;
+
+option java_package = "protobuffprotocol";
+option java_outer_classname = "Protobufs";
+
+message User{
+  string username=1;
+  string password=2;
+}
+
+message Artist{
+  string location=1;
+  string date=2;
+  int32 availableTicketsNumber=3;
+  string name=4;
+}
+
+message Show{
+  int32 id=1;
+  string date=2;
+  string location=3;
+  int32 availableTicketsNumber=4;
+  int32 soldTicketsNumber=5;
+  string artistName=6;
+}
+
+message Ticket{
+  int32 showId=1;
+  string purchaserName=2;
+  int32 number=3;
+}
+message Request {
+  enum Type { Unkown=0; Login = 1; Logout = 2; BuyTicket = 3; GetArtistsByDate=4 ; GetShows=5; }
+
+  // Identifies which request is filled in.
+  Type type = 1;
+
+  // One of the following will be filled in, depending on the type.
+    User user = 2;
+    Ticket ticket = 3;
+    string date=4;
+}
+
+message Response{
+  enum Type { Unknown=0; Ok = 1; Error = 2; BuyTicket=3; GetArtistsByDate = 4; GetShows=5; }
+
+  // Identifies which request is filled in.
+  Type type = 1;
+
+  // One of the following will be filled in, depending on the type.
+  string error = 2;
+  Ticket ticket = 3;
+  User user = 6;
+  repeated Artist artist = 4 ;
+  repeated Show shows = 5;
+}

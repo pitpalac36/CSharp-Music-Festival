@@ -1,0 +1,2 @@
+echo "Generating Java classes"
+C:\Users\Laura\Documents\homeMPP\mpp-proiect-repository-pitpalac36\cross_platform\client_java\protoc\protoc-3.5.1-windows-x86_64.exe Protobuf\MusicFestivalProtocol.proto -I=. --java_out=Protobuf\javaFiles --csharp_out=Protobuf\csharpFiles
