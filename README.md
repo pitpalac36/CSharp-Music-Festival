@@ -19,3 +19,7 @@ tema2 -> service layer done + forms for GUI
 tema3 -> refactoring into a client-server app which uses TCP communication, serialized objects protocol and proxy pattern
 
 tema4 -> using .NET Remoting for networking
+
+tema5 -> cross plaform app (C# server & Java client) using Google Protobufs
+
+tema6 -> trying some relational mapping with Entity Framework
