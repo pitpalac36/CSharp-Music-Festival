@@ -23,3 +23,5 @@ tema4 -> using .NET Remoting for networking
 tema5 -> cross plaform app (C# server & Java client) using Google Protobufs
 
 tema6 -> trying some relational mapping with Entity Framework
+
+tema7_restClient -> testing rest endpoints made in Java app
